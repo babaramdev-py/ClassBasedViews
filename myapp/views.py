@@ -5,3 +5,10 @@ from django.http import HttpResponse
 
 class IndexView(TemplateView):
     template_name = 'index.html'
+
+    # Learn how to use Kwargs and Args
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['injectme'] = 'Injected.'
+        return context
