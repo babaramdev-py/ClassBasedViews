@@ -1,4 +1,4 @@
-#Class Based Views Implementation
+# Class Based Views Implementation
 
 The following project consists of implementation of CBV's. Coming from a functional paradigm of views,
 I have found it to be phenomenally easy to use CBV's
