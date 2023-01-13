@@ -1,0 +1,20 @@
+{% extends 'myapp/myapp_base.html' %}
+
+{% block title %}School List{% endblock %}
+
+{% block body %}
+    <br><br>
+    <h1>Welcome to a list of all the schools</h1>
+    <br>
+    <ul>
+        {% for school in schools %}
+            <h2>
+                <li>
+                    <a href="{{school.id}}">
+                        {{school.name}}
+                    </a>
+                </li>
+            </h2>
+        {% endfor %}
+    </ul>
+{% endblock %}
